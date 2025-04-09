@@ -1,0 +1,62 @@
+@import url("resets.css");
+@import url("fonts.css");
+@import url("variables.css");
+@import url("header.css");
+@import url("sections/hero.css");
+@import url("sections/about.css");
+
+/* Global */
+
+*:focus-visible {
+  outline: 2px solid blue;
+  outline-offset: 1px;
+  transition: none;
+}
+
+html {
+  font-family: var(--font-plusJakartaSans);
+}
+
+body {
+  min-width: 18.75rem;
+}
+
+h1,
+h2 {
+  font-family: var(--font-japanhip);
+  font-weight: bold;
+  line-height: 1.25;
+}
+
+h2 {
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+/* Utilities */
+
+.button {
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  font-size: 0.875rem;
+  border-radius: 100px;
+}
+
+.button--primary {
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+
+.mw {
+  max-width: 1200px;
+  margin: 0 auto;
+}
