@@ -1,10 +1,10 @@
-@import url("resets.css");
-@import url("fonts.css");
-@import url("variables.css");
-@import url("header.css");
-@import url("sections/hero.css");
-@import url("sections/about.css");
-@import url("sections/menu.css");
+@import url("/css/resets.css");
+@import url("/css/fonts.css");
+@import url("/css/variables.css");
+@import url("/css/header.css");
+@import url("/css/sections/hero.css");
+@import url("/css/sections/about.css");
+@import url("/css/sections/menu.css");
 
 /* Global */
 
