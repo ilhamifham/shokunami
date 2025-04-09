@@ -23,7 +23,8 @@ body {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   font-family: var(--font-japanhip);
   font-weight: bold;
   line-height: 1.25;
