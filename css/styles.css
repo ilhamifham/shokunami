@@ -4,6 +4,7 @@
 @import url("header.css");
 @import url("sections/hero.css");
 @import url("sections/about.css");
+@import url("sections/menu.css");
 
 /* Global */
 
@@ -40,6 +41,10 @@ a {
 img {
   display: block;
   width: 100%;
+}
+
+button {
+  cursor: pointer;
 }
 
 /* Utilities */
