@@ -1,5 +1,6 @@
 .hero__image {
   background-color: var(--color-brightMaroon);
+  color: var(--color-white);
   position: relative;
   padding-bottom: 2rem;
 }
@@ -11,10 +12,9 @@
 .hero__image span {
   position: absolute;
   bottom: 0;
-  font-size: 14vw;
+  font-size: 4rem;
   line-height: 1.1;
   font-weight: bold;
-  color: var(--color-white);
   margin: 0 0 1rem 1rem;
 }
 
@@ -23,14 +23,14 @@
 }
 
 .hero__description h2 {
-  font-size: 3rem;
+  font-size: 3.5rem;
   color: var(--color-black);
   margin-bottom: 1rem;
 }
 
 .hero__description p {
   font-size: 1.125rem;
-  color: var(--color-outerSpace);
+  color: var(--color-black-1);
   margin-bottom: 2rem;
 }
 
@@ -42,7 +42,7 @@
 }
 
 .hero__info .customers__base {
-  border-bottom: 1px solid var(--color-gray);
+  border-bottom: 1px solid var(--color-black-3);
   padding-bottom: 1.5rem;
 }
 
@@ -67,7 +67,7 @@
 
 .hero__info .customers__base div:last-child,
 .hero__info .customers__reviews div:last-child {
-  color: var(--color-graniteGray);
+  color: var(--color-black-2);
 }
 
 .hero__info .customers__reviews div:first-child i {
@@ -81,14 +81,14 @@
     justify-content: center;
     padding: 2rem 0;
     margin: 0 1rem;
-    border-top: 1px solid var(--color-gray);
+    border-top: 1px solid var(--color-black-3);
   }
 
   .hero__info .customers__base {
     padding-bottom: 0;
     border-bottom: inherit;
     padding-right: 2rem;
-    border-right: 1px solid var(--color-gray);
+    border-right: 1px solid var(--color-black-3);
     justify-content: flex-end;
   }
 
@@ -110,6 +110,8 @@
     flex: 1;
     padding-top: 4rem;
     padding-bottom: 4rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
     display: flex;
   }
@@ -117,10 +119,6 @@
   .hero__image img {
     transform: translate(30px, 10px) scale(1.15);
     margin: auto 0;
-  }
-
-  .hero__image span {
-    font-size: 6.25rem;
   }
 
   .hero__content {

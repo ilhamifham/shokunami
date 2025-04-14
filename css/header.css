@@ -1,11 +1,7 @@
 header {
   padding: 1rem;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  color: var(--color-white);
-  z-index: 1;
+  color: var(--color-black);
+  text-align: center;
 }
 
 header h1 {
@@ -15,5 +11,6 @@ header h1 {
 @media screen and (min-width: 64rem) {
   header {
     padding: 1rem 2rem;
+    text-align: left;
   }
 }
