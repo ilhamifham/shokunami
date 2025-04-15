@@ -148,6 +148,10 @@
 }
 
 @media screen and (min-width: 48rem) {
+  .sushies {
+    border-top: 5px solid var(--color-white);
+  }
+
   .sushies,
   .drinks {
     display: flex;
@@ -174,10 +178,6 @@
 
   .menu__content h2 {
     font-size: 3rem;
-  }
-
-  .sushies {
-    border-top: 5px solid var(--color-white);
   }
 
   .sushies .sushies__content h3,

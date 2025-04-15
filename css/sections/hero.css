@@ -11,11 +11,12 @@
 
 .hero__image span {
   position: absolute;
-  bottom: 0;
-  font-size: 4rem;
+  font-size: 20vw;
   line-height: 1.1;
   font-weight: bold;
-  margin: 0 0 1rem 1rem;
+  margin: 1rem 1rem 0 0;
+  top: 0;
+  right: 0;
 }
 
 .hero__description {
@@ -35,7 +36,7 @@
 }
 
 .hero__info {
-  padding: 0 1rem 2rem;
+  padding: 2rem 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -73,6 +74,12 @@
 .hero__info .customers__reviews div:first-child i {
   font-size: 2rem;
   transform: translateY(-11px);
+}
+
+@media screen and (max-width: 20rem) {
+  .hero__image span {
+    font-size: 4rem;
+  }
 }
 
 @media screen and (min-width: 40rem) {
@@ -119,6 +126,11 @@
   .hero__image img {
     transform: translate(30px, 10px) scale(1.15);
     margin: auto 0;
+  }
+
+  .hero__image span {
+    font-size: 6rem;
+    margin-right: 2rem;
   }
 
   .hero__content {
