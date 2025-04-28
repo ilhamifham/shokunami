@@ -1,18 +1,12 @@
 @import url("resets.css");
 @import url("fonts.css");
 @import url("variables.css");
-@import url("header.css");
-@import url("sections/hero.css");
-@import url("sections/about.css");
-@import url("sections/menu.css");
-@import url("sections/contact.css");
-@import url("footer.css");
 
 /* Global */
 
 *:focus-visible {
-  outline: 2px solid blue;
-  outline-offset: 1px;
+  outline: 2px solid dodgerblue;
+  outline-offset: 2px;
   transition: none;
 }
 
@@ -48,10 +42,6 @@ img {
   width: 100%;
 }
 
-button {
-  cursor: pointer;
-}
-
 /* Utilities */
 
 .button {
@@ -69,4 +59,590 @@ button {
 .mw {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+/* Header */
+
+header {
+  padding: 1rem;
+  color: var(--color-black);
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+/* Section - Hero */
+
+.hero__image {
+  background-color: var(--color-brightMaroon);
+  color: var(--color-white);
+  position: relative;
+  padding-bottom: 2rem;
+}
+
+.hero__image img {
+  transform: translateY(4rem);
+}
+
+.hero__image span {
+  position: absolute;
+  font-size: 4rem;
+  line-height: 1.1;
+  margin: 1rem 1rem 0 0;
+  top: 0;
+  right: 0;
+}
+
+.hero__description {
+  padding: 2rem 1rem;
+}
+
+.hero__description h2 {
+  font-size: 3.5rem;
+  color: var(--color-black);
+  margin-bottom: 1rem;
+}
+
+.hero__description p {
+  font-size: 1.125rem;
+  color: var(--color-black-1);
+  margin-bottom: 2rem;
+}
+
+.hero__info {
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero__info .customers__base {
+  border-bottom: 1px solid var(--color-black-3);
+  padding-bottom: 1.5rem;
+}
+
+.hero__info .customers__reviews {
+  padding-top: 1.5rem;
+}
+
+.hero__info .customers__base,
+.hero__info .customers__reviews {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.3rem;
+  flex: 1;
+}
+
+.hero__info .customers__base div:first-child,
+.hero__info .customers__reviews div:first-child {
+  font-family: var(--font-japanhip);
+  font-size: 4rem;
+}
+
+.hero__info .customers__base div:last-child,
+.hero__info .customers__reviews div:last-child {
+  color: var(--color-black-2);
+}
+
+.hero__info .customers__reviews div:first-child i {
+  font-size: 2rem;
+  transform: translateY(-11px);
+}
+
+@media screen and (min-width: 20rem) {
+  .hero__image span {
+    font-size: 19vw;
+  }
+}
+
+/* Section - About */
+
+.about {
+  display: flex;
+  flex-direction: column;
+}
+
+.about__content {
+  order: 1;
+}
+
+.about__description {
+  padding: 2rem 1rem;
+}
+
+.about__description div {
+  font-size: 1.125rem;
+}
+
+.about__description h2 {
+  font-size: 2.5rem;
+  margin: 1rem 0;
+}
+
+.about__description p {
+  color: var(--color-black-1);
+  margin-bottom: 2rem;
+}
+
+.about__images .tuna,
+.about__images .shrimp {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem 1rem;
+  background-color: var(--color-brightMaroon);
+  color: var(--color-white);
+  width: 100%;
+}
+
+.about__images .tuna {
+  border-bottom: 5px solid var(--color-white);
+}
+
+.about__images .tuna img,
+.about__images .shrimp img {
+  max-width: 11.75rem;
+  height: auto;
+}
+
+.about__images .tuna div:last-child,
+.about__images .shrimp div:first-child {
+  font-size: 4rem;
+}
+
+/* Section - Menu */
+
+.menu {
+  padding: 2rem 1rem;
+  background-color: var(--color-brightMaroon);
+}
+
+.menu__content {
+  text-align: center;
+  color: var(--color-white);
+}
+
+.menu__content div {
+  font-size: 1.125rem;
+}
+
+.menu__content h2 {
+  font-size: 2.5rem;
+  margin: 1rem 0;
+}
+
+.menu__cards {
+  margin-top: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.menu__cards article {
+  background-color: var(--color-white);
+  border-radius: 10px;
+  padding: 1rem;
+  position: relative;
+}
+
+.menu__cards article img {
+  width: 12.5rem;
+  height: 9.375rem;
+}
+
+.menu__cards article h3 {
+  font-family: var(--font-japanhip);
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.menu__cards .card__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.125rem;
+}
+
+.menu__cards .card__content i {
+  margin-right: 0.25rem;
+  transform: translateY(-1px);
+}
+
+.menu__cards .card__content .price {
+  font-family: var(--font-plusJakartaSans-semibold);
+}
+
+.drinks {
+  border-bottom: 5px solid var(--color-white);
+}
+
+.sushies .sushies__image,
+.drinks .drinks__image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 2rem;
+  padding: 2rem 1rem;
+}
+
+.sushies .sushies__image img,
+.drinks .drinks__image img {
+  max-width: 11.75rem;
+}
+
+.sushies .sushies__image div,
+.drinks .drinks__image div {
+  font-size: 4rem;
+}
+
+.sushies .sushies__content,
+.drinks .drinks__content {
+  padding: 2rem 1rem;
+  background-color: var(--color-brightMaroon);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.sushies .sushies__content h3,
+.drinks .drinks__content h3 {
+  font-size: 2rem;
+  color: var(--color-white);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.sushies .sushies__content p,
+.drinks .drinks__content p {
+  color: var(--color-white);
+  text-align: center;
+}
+
+.sushies .sushies__content ul,
+.drinks .drinks__content ul {
+  color: var(--color-white);
+  font-size: 1.125rem;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin-top: 1rem;
+  font-family: var(--font-japanhip);
+  text-transform: uppercase;
+}
+
+.sushies .sushies__content ul li,
+.drinks .drinks__content ul li {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.sushies .sushies__content ul li .line,
+.drinks .drinks__content ul li .line {
+  width: 100%;
+  height: 1px;
+  background-color: var(--color-white);
+}
+
+.sushies .sushies__content ul li .price,
+.drinks .drinks__content ul li .price {
+  font-family: var(--font-plusJakartaSans-semibold);
+}
+
+/* Section - Contact */
+
+.contact {
+  padding: 2rem 1rem;
+  background-color: var(--color-brightMaroon);
+  color: var(--color-white);
+  text-align: center;
+}
+
+.contact__content div {
+  font-size: 1.125rem;
+}
+
+.contact__content h2 {
+  margin: 1rem 0;
+  font-size: 2.5rem;
+}
+
+.contact__content .info {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contact__content article {
+  background-color: var(--color-white);
+  color: var(--color-black);
+  border-radius: 10px;
+  padding: 1rem;
+  width: 100%;
+}
+
+.contact__content article h3 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+/* Footer */
+
+footer {
+  padding: 1rem;
+}
+
+footer ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+footer ul li {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 1.5rem;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 40rem) {
+  /* Section - Hero */
+
+  .hero__info {
+    flex-direction: row;
+    justify-content: center;
+    padding: 2rem 0;
+    margin: 0 1rem;
+    border-top: 1px solid var(--color-black-3);
+  }
+
+  .hero__info .customers__base {
+    padding-bottom: 0;
+    border-bottom: inherit;
+    padding-right: 2rem;
+    border-right: 1px solid var(--color-black-3);
+    justify-content: flex-end;
+  }
+
+  .hero__info .customers__reviews {
+    padding-top: 0;
+    padding-left: 2rem;
+    justify-content: flex-start;
+  }
+
+  /* Section - About */
+
+  .about__images {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .about__images .tuna {
+    border-bottom: inherit;
+    border-right: 5px solid var(--color-white);
+  }
+
+  .about__images .tuna,
+  .about__images .shrimp {
+    padding: 2rem;
+  }
+
+  /* Section - Contact */
+
+  .contact__content .info {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 48rem) {
+  /* Section - Menu */
+
+  .sushies {
+    border-top: 5px solid var(--color-white);
+  }
+
+  .sushies,
+  .drinks {
+    display: flex;
+  }
+
+  .sushies .sushies__content,
+  .sushies .sushies__image,
+  .drinks .drinks__content,
+  .drinks .drinks__image {
+    flex: 1;
+  }
+
+  .sushies .sushies__content {
+    order: -1;
+  }
+}
+
+@media screen and (min-width: 64rem) {
+  /* Header */
+
+  header {
+    padding: 1rem 2rem;
+    text-align: left;
+  }
+
+  /* Section - Hero */
+
+  .hero {
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+  }
+
+  .hero__image {
+    flex: 1;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: flex;
+  }
+
+  .hero__image img {
+    transform: translate(30px, 10px) scale(1.15);
+    margin: auto 0;
+  }
+
+  .hero__image span {
+    font-size: 6rem;
+    margin-right: 2rem;
+  }
+
+  .hero__content {
+    flex: 1.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .hero__description {
+    padding: 6rem 2rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .hero__description h2 {
+    font-size: 4rem;
+  }
+
+  .hero__info {
+    margin: 0 2rem;
+  }
+
+  /* Section - About */
+
+  .about {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .about__content {
+    flex: 1;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    order: inherit;
+  }
+
+  .about__description {
+    padding: 2rem;
+  }
+
+  .about__description h2 {
+    font-size: 3rem;
+  }
+
+  .about__images {
+    flex: 1.5;
+    flex-direction: column;
+  }
+
+  .about__images .tuna,
+  .about__images .shrimp {
+    height: 100%;
+    border-bottom: 5px solid var(--color-white);
+  }
+
+  .about__images .tuna {
+    border-right: inherit;
+    border-top-right-radius: 10px;
+  }
+
+  /* Section - Menu */
+
+  .menu {
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 2rem;
+  }
+
+  .menu__content h2 {
+    font-size: 3rem;
+  }
+
+  .sushies .sushies__content h3,
+  .drinks .drinks__content h3 {
+    font-size: 2.5rem;
+  }
+
+  .sushies .sushies__content,
+  .sushies .sushies__image,
+  .drinks .drinks__content,
+  .drinks .drinks__image {
+    padding: 2rem;
+  }
+
+  .sushies .sushies__content {
+    border-bottom-left-radius: 10px;
+  }
+
+  .drinks .drinks__content {
+    border-top-right-radius: 10px;
+  }
+
+  /* Section - Contact */
+
+  .contact {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 2rem;
+  }
 }
