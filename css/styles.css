@@ -22,9 +22,9 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+footer div {
   font-family: var(--font-japanhip);
-  font-weight: bold;
   line-height: 1.25;
 }
 
@@ -69,7 +69,8 @@ header {
   text-align: center;
 }
 
-header h1 {
+header h1,
+footer div {
   font-size: 2rem;
 }
 
@@ -410,27 +411,7 @@ header h1 {
 
 footer {
   padding: 1rem;
-}
-
-footer ul {
-  list-style-type: none;
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
-  align-items: center;
-  justify-content: center;
-}
-
-footer ul li {
-  background-color: var(--color-black);
-  color: var(--color-white);
-  width: 2.5rem;
-  height: 2.5rem;
-  font-size: 1.5rem;
-  border-radius: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
 }
 
 @media screen and (min-width: 40rem) {
@@ -646,5 +627,12 @@ footer ul li {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     padding: 2rem;
+  }
+
+  /* Footer */
+
+  footer {
+    padding: 1rem 2rem;
+    text-align: right;
   }
 }
