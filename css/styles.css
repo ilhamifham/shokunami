@@ -147,9 +147,10 @@ header h1 {
   color: var(--color-black-2);
 }
 
-.hero__info .customers__reviews div:first-child i {
+.hero__info .customers__reviews div:first-child span {
   font-size: 2rem;
   transform: translateY(-11px);
+  display: inline-block;
 }
 
 @media screen and (min-width: 20rem) {
@@ -272,9 +273,10 @@ header h1 {
   font-size: 1.125rem;
 }
 
-.menu__cards .card__content i {
+.menu__cards .card__content span:first-child {
   margin-right: 0.25rem;
   transform: translateY(-1px);
+  display: inline-block;
 }
 
 .menu__cards .card__content .price {
