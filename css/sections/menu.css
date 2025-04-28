@@ -59,7 +59,7 @@
 }
 
 .menu__cards .card__content .price {
-  font-weight: 600;
+  font-family: var(--font-plusJakartaSans-semibold);
 }
 
 .drinks {
@@ -144,7 +144,7 @@
 
 .sushies .sushies__content ul li .price,
 .drinks .drinks__content ul li .price {
-  font-family: var(--font-plusJakartaSans);
+  font-family: var(--font-plusJakartaSans-semibold);
 }
 
 @media screen and (min-width: 48rem) {

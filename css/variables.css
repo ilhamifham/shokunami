@@ -11,6 +11,7 @@
   --color-black-2: rgba(var(--black), 0.6);
   --color-black-3: rgba(var(--black), 0.1);
 
-  --font-plusJakartaSans: "Plus Jakarta Sans";
-  --font-japanhip: "Japanhip", var(--font-plusJakartaSans);
+  --font-plusJakartaSans-regular: "Plus Jakarta Sans Regular";
+  --font-plusJakartaSans-semibold: "Plus Jakarta Sans Semibold";
+  --font-japanhip: "Japanhip", var(--font-plusJakartaSans-regular);
 }

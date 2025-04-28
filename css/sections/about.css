@@ -45,6 +45,7 @@
 .about__images .tuna img,
 .about__images .shrimp img {
   max-width: 11.75rem;
+  height: auto;
 }
 
 .about__images .tuna div:last-child,
