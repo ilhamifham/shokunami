@@ -17,7 +17,11 @@
       <section class="hero__section">
         <div class="hero mw">
           <div class="hero__image">
-            <img src="assets/images/sushi.png" alt="" />
+            <picture>
+              <source srcset="assets/images/sushi-large@2x.png" media="(min-width: 64rem)" />
+              <source srcset="assets/images/sushi-small@2x.png" />
+              <img src="assets/images/sushi.png" width="480" height="497" alt="" />
+            </picture>
             <span>日<br />本<br />食</span>
           </div>
           <div class="hero__content">

@@ -40,6 +40,11 @@ a {
 img {
   display: block;
   width: 100%;
+  height: auto;
+}
+
+picture {
+  display: block;
 }
 
 /* Utilities */
@@ -83,8 +88,9 @@ footer div {
   padding-bottom: 2rem;
 }
 
-.hero__image img {
+.hero__image picture {
   transform: translateY(4rem);
+  max-width: 37.5rem;
 }
 
 .hero__image span {
@@ -156,7 +162,7 @@ footer div {
 
 @media screen and (min-width: 20rem) {
   .hero__image span {
-    font-size: 19vw;
+    font-size: 18vw;
   }
 }
 
@@ -206,12 +212,6 @@ footer div {
   border-bottom: 5px solid var(--color-white);
 }
 
-.about__images .tuna img,
-.about__images .shrimp img {
-  max-width: 11.75rem;
-  height: auto;
-}
-
 .about__images .tuna div:last-child,
 .about__images .shrimp div:first-child {
   font-size: 4rem;
@@ -252,11 +252,6 @@ footer div {
   border-radius: 10px;
   padding: 1rem;
   position: relative;
-}
-
-.menu__cards article img {
-  width: 12.5rem;
-  height: 9.375rem;
 }
 
 .menu__cards article h3 {
@@ -300,7 +295,7 @@ footer div {
 
 .sushies .sushies__image img,
 .drinks .drinks__image img {
-  max-width: 11.75rem;
+  width: 11.75rem;
 }
 
 .sushies .sushies__image div,
@@ -513,8 +508,8 @@ footer {
     display: flex;
   }
 
-  .hero__image img {
-    transform: translate(30px, 10px) scale(1.15);
+  .hero__image picture {
+    transform: translate(-30px, 25px) scale(1.15);
     margin: auto 0;
   }
 
