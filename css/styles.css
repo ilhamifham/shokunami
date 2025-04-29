@@ -66,6 +66,14 @@ picture {
   margin: 0 auto;
 }
 
+.about__images .tuna img,
+.about__images .shrimp img,
+.menu__cards article img,
+.sushies .sushies__image img,
+.drinks .drinks__image img {
+  width: 11.75rem;
+}
+
 /* Header */
 
 header {
@@ -290,11 +298,6 @@ footer div {
   flex-direction: row;
   gap: 2rem;
   padding: 2rem 1rem;
-}
-
-.sushies .sushies__image img,
-.drinks .drinks__image img {
-  width: 11.75rem;
 }
 
 .sushies .sushies__image div,
