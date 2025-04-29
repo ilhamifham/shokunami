@@ -18,17 +18,12 @@ html {
 
 body {
   min-width: 20rem;
+  background-color: var(--body-bg);
+  color: var(--body-fg);
 }
 
-h1,
 h2,
-h3,
-footer div {
-  font-family: var(--font-japanhip);
-  line-height: 1.25;
-}
-
-h2 {
+h3 {
   text-transform: uppercase;
 }
 
@@ -37,33 +32,62 @@ a {
   display: inline-block;
 }
 
+picture,
 img {
   display: block;
+}
+
+img {
   width: 100%;
   height: auto;
 }
 
-picture {
-  display: block;
+/* Utilities */
+
+h1,
+h2,
+h3,
+.hero__info .customers__base div:first-child,
+.hero__info .customers__reviews div:first-child,
+footer div {
+  font-family: var(--font-japanhip);
+  line-height: 1.25;
 }
 
-/* Utilities */
+header h1,
+.hero__description h2,
+.about__description h2,
+.menu__cards article h3,
+.hero__info .customers__base div:first-child,
+.hero__info .customers__reviews div:first-child,
+.menu__cards .card__content .price,
+.sushies .sushies__image div,
+.drinks .drinks__image div,
+.contact__content article h3,
+footer div {
+  color: var(--heading-fg);
+}
 
 .button {
   padding: 0.75rem 1.5rem;
-  font-family: var(--font-plusJakartaSans-semibold);
   font-size: 0.875rem;
   border-radius: 100px;
 }
 
 .button--primary {
-  background-color: var(--color-black);
-  color: var(--color-white);
+  background-color: var(--heading-fg);
+  color: var(--body-bg);
 }
 
 .mw {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+header,
+footer {
+  padding: 1rem;
+  text-align: center;
 }
 
 .about__images .tuna img,
@@ -74,13 +98,28 @@ picture {
   width: 11.75rem;
 }
 
-/* Header */
-
-header {
-  padding: 1rem;
-  color: var(--color-black);
-  text-align: center;
+.hero__image,
+.about__images .tuna,
+.about__images .shrimp,
+.menu__content,
+.sushies .sushies__content,
+.drinks .drinks__content,
+.contact__content div:first-child,
+.contact__content h2 {
+  color: var(--white);
 }
+
+.button,
+.about__description div,
+.menu__content div,
+.menu__cards .card__content,
+.sushies .sushies__content ul li,
+.drinks .drinks__content ul li,
+.contact__content div {
+  font-family: var(--font-plusJakartaSans-semibold);
+}
+
+/* Header */
 
 header h1,
 footer div {
@@ -90,8 +129,7 @@ footer div {
 /* Section - Hero */
 
 .hero__image {
-  background-color: var(--color-brightMaroon);
-  color: var(--color-white);
+  background-color: var(--brightMaroon);
   position: relative;
 }
 
@@ -114,13 +152,11 @@ footer div {
 
 .hero__description h2 {
   font-size: 3.5rem;
-  color: var(--color-black);
   margin-bottom: 1rem;
 }
 
 .hero__description p {
   font-size: 1.125rem;
-  color: var(--color-black-1);
   margin-bottom: 2rem;
 }
 
@@ -132,7 +168,7 @@ footer div {
 }
 
 .hero__info .customers__base {
-  border-bottom: 1px solid var(--color-black-3);
+  border-bottom: 1px solid var(--border-bg);
   padding-bottom: 1.5rem;
 }
 
@@ -151,13 +187,7 @@ footer div {
 
 .hero__info .customers__base div:first-child,
 .hero__info .customers__reviews div:first-child {
-  font-family: var(--font-japanhip);
   font-size: 4rem;
-}
-
-.hero__info .customers__base div:last-child,
-.hero__info .customers__reviews div:last-child {
-  color: var(--color-black-2);
 }
 
 .hero__info .customers__reviews div:first-child span {
@@ -190,6 +220,7 @@ footer div {
 
 .about__description div {
   font-size: 1.125rem;
+  color: var(--heading-fg);
 }
 
 .about__description h2 {
@@ -198,7 +229,6 @@ footer div {
 }
 
 .about__description p {
-  color: var(--color-black-1);
   margin-bottom: 2rem;
 }
 
@@ -210,13 +240,12 @@ footer div {
   justify-content: center;
   gap: 2rem;
   padding: 2rem 1rem;
-  background-color: var(--color-brightMaroon);
-  color: var(--color-white);
+  background-color: var(--brightMaroon);
   width: 100%;
 }
 
 .about__images .tuna {
-  border-bottom: 5px solid var(--color-white);
+  border-bottom: 5px solid var(--body-bg);
 }
 
 .about__images .tuna div:last-child,
@@ -228,12 +257,11 @@ footer div {
 
 .menu {
   padding: 2rem 1rem;
-  background-color: var(--color-brightMaroon);
+  background-color: var(--brightMaroon);
 }
 
 .menu__content {
   text-align: center;
-  color: var(--color-white);
 }
 
 .menu__content div {
@@ -255,18 +283,16 @@ footer div {
 }
 
 .menu__cards article {
-  background-color: var(--color-white);
+  background-color: var(--body-bg);
   border-radius: 10px;
   padding: 1rem;
   position: relative;
 }
 
 .menu__cards article h3 {
-  font-family: var(--font-japanhip);
   font-size: 1.5rem;
   margin: 1rem 0;
   text-align: center;
-  text-transform: uppercase;
 }
 
 .menu__cards .card__content {
@@ -282,12 +308,8 @@ footer div {
   display: inline-block;
 }
 
-.menu__cards .card__content .price {
-  font-family: var(--font-plusJakartaSans-semibold);
-}
-
 .drinks {
-  border-bottom: 5px solid var(--color-white);
+  border-bottom: 5px solid var(--body-bg);
 }
 
 .sushies .sushies__image,
@@ -308,7 +330,7 @@ footer div {
 .sushies .sushies__content,
 .drinks .drinks__content {
   padding: 2rem 1rem;
-  background-color: var(--color-brightMaroon);
+  background-color: var(--brightMaroon);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -318,20 +340,16 @@ footer div {
 .sushies .sushies__content h3,
 .drinks .drinks__content h3 {
   font-size: 2rem;
-  color: var(--color-white);
-  text-transform: uppercase;
   text-align: center;
 }
 
 .sushies .sushies__content p,
 .drinks .drinks__content p {
-  color: var(--color-white);
   text-align: center;
 }
 
 .sushies .sushies__content ul,
 .drinks .drinks__content ul {
-  color: var(--color-white);
   font-size: 1.125rem;
   display: flex;
   flex-direction: column;
@@ -339,8 +357,6 @@ footer div {
   flex-wrap: wrap;
   list-style-type: none;
   margin-top: 1rem;
-  font-family: var(--font-japanhip);
-  text-transform: uppercase;
 }
 
 .sushies .sushies__content ul li,
@@ -356,20 +372,14 @@ footer div {
 .drinks .drinks__content ul li .line {
   width: 100%;
   height: 1px;
-  background-color: var(--color-white);
-}
-
-.sushies .sushies__content ul li .price,
-.drinks .drinks__content ul li .price {
-  font-family: var(--font-plusJakartaSans-semibold);
+  background-color: var(--white);
 }
 
 /* Section - Contact */
 
 .contact {
   padding: 2rem 1rem;
-  background-color: var(--color-brightMaroon);
-  color: var(--color-white);
+  background-color: var(--brightMaroon);
   text-align: center;
 }
 
@@ -390,8 +400,8 @@ footer div {
 }
 
 .contact__content article {
-  background-color: var(--color-white);
-  color: var(--color-black);
+  background-color: var(--body-bg);
+  color: var(--body-fg);
   border-radius: 10px;
   padding: 1rem;
   width: 100%;
@@ -418,14 +428,14 @@ footer {
     justify-content: center;
     padding: 2rem 0;
     margin: 0 1rem;
-    border-top: 1px solid var(--color-black-3);
+    border-top: 1px solid var(--border-bg);
   }
 
   .hero__info .customers__base {
     padding-bottom: 0;
     border-bottom: inherit;
     padding-right: 2rem;
-    border-right: 1px solid var(--color-black-3);
+    border-right: 1px solid var(--border-bg);
     justify-content: flex-end;
   }
 
@@ -445,7 +455,7 @@ footer {
 
   .about__images .tuna {
     border-bottom: inherit;
-    border-right: 5px solid var(--color-white);
+    border-right: 5px solid var(--body-bg);
   }
 
   .about__images .tuna,
@@ -464,7 +474,7 @@ footer {
   /* Section - Menu */
 
   .sushies {
-    border-top: 5px solid var(--color-white);
+    border-top: 5px solid var(--body-bg);
   }
 
   .sushies,
@@ -576,7 +586,7 @@ footer {
   .about__images .tuna,
   .about__images .shrimp {
     height: 100%;
-    border-bottom: 5px solid var(--color-white);
+    border-bottom: 5px solid var(--body-bg);
   }
 
   .about__images .tuna {
@@ -623,12 +633,5 @@ footer {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     padding: 2rem;
-  }
-
-  /* Footer */
-
-  footer {
-    padding: 1rem 2rem;
-    text-align: right;
   }
 }

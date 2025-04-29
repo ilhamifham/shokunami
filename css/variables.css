@@ -1,17 +1,21 @@
 :root {
-  --black: 0, 0, 0;
-  --brightMaroon: 195, 34, 70;
-  --white: 255, 255, 255;
-
-  --color-black: rgb(var(--black));
-  --color-brightMaroon: rgb(var(--brightMaroon));
-  --color-white: rgb(var(--white));
-
-  --color-black-1: rgba(var(--black), 0.8);
-  --color-black-2: rgba(var(--black), 0.6);
-  --color-black-3: rgba(var(--black), 0.1);
+  --body-bg: #ffffff;
+  --body-fg: #000000cc;
+  --heading-fg: #000000;
+  --border-bg: #0000001a;
+  --white: #ffffff;
+  --brightMaroon: #c32246;
 
   --font-plusJakartaSans-regular: "Plus Jakarta Sans Regular";
   --font-plusJakartaSans-semibold: "Plus Jakarta Sans Semibold";
   --font-japanhip: "Japanhip", var(--font-plusJakartaSans-regular);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --body-bg: #121212;
+    --body-fg: #ffffffcc;
+    --heading-fg: #ffffff;
+    --border-bg: #ffffff1a;
+  }
 }
