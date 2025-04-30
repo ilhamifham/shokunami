@@ -6,6 +6,9 @@
   --white: #ffffff;
   --brightMaroon: #c32246;
 
+  --radius-lg: 10px;
+  --radius-sm: 5px;
+
   --font-plusJakartaSans-regular: "Plus Jakarta Sans Regular";
   --font-plusJakartaSans-semibold: "Plus Jakarta Sans Semibold";
   --font-japanhip: "Japanhip", var(--font-plusJakartaSans-regular);
@@ -17,5 +20,6 @@
     --body-fg: #ffffffcc;
     --heading-fg: #ffffff;
     --border-bg: #ffffff1a;
+    --brightMaroon: #6d1226;
   }
 }
