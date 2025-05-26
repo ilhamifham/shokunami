@@ -1,186 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-    <meta name="description" content="SushiWave - Restaurant's online menu card." />
-    <link rel="icon" href="public/favicon.ico" />
-    <link rel="stylesheet" href="css/styles.css" />
-    <title>SushiWave</title>
-  </head>
-  <body>
-    <header>
-      <h1>SushiWave</h1>
-    </header>
-    <main>
-      <section>
-        <div class="hero__section">
-          <div class="hero__image">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="description" content="SushiWave - Restaurant's online menu card." />
+  <link rel="icon" href="public/favicon.ico" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <title>SushiWave</title>
+</head>
+
+<body>
+  <header>
+    <h1>SushiWave</h1>
+  </header>
+  <main>
+    <section>
+      <div class="hero__section">
+        <div class="hero__image">
+          <picture>
+            <source srcset="assets/images/sushi-desktop.png, assets/images/sushi-desktop@2x.png 2x, assets/images/sushi-desktop@3x.png 3x" media="(min-width: 64rem)" />
+            <source srcset="assets/images/sushi-mobile.png, assets/images/sushi-mobile@2x.png 2x, assets/images/sushi-mobile@3x.png 3x" />
+            <img src="assets/images/sushi-mobile.png" alt="japanese foods" />
+          </picture>
+          <span>日<br />本<br />食</span>
+        </div>
+        <div class="hero__content">
+          <div class="hero__description">
+            <h2>Dine In and Immerse Yourself in the Art of Japanese Cuisine</h2>
+            <p>Enjoy the most popular japanese foods and drinks in an authentic japanese ambience.</p>
+            <a class="button button--primary" href="#menu">Our Menu</a>
+          </div>
+          <div class="hero__info">
+            <div class="hero__customers__base">
+              <div>24k+</div>
+              <div>Happy<br />Customers</div>
+            </div>
+            <div class="hero__customers__reviews">
+              <div>4.5<span>&#127775;</span></div>
+              <div>Customers<br />Reviews</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="about__section">
+        <div class="about__content">
+          <div>About Us</div>
+          <h2>Our mission is to bring you the true flavors and atmosphere of japan</h2>
+          <p>We will continue to provide the experience of Omotenashi, the Japanese mindset of hospitality, with the environment and dining for our customers.</p>
+          <a class="button button--primary" href="#visit">Visit Us</a>
+        </div>
+        <div class="about__images">
+          <div class="about__images__tuna">
             <picture>
-              <source srcset="assets/images/sushi-desktop.png, assets/images/sushi-desktop@2x.png 2x, assets/images/sushi-desktop@3x.png 3x" media="(min-width: 64rem)" />
-              <source srcset="assets/images/sushi-mobile.png, assets/images/sushi-mobile@2x.png 2x, assets/images/sushi-mobile@3x.png 3x" />
-              <img src="assets/images/sushi-mobile.png" alt="japanese foods" />
+              <source srcset="assets/images/tuna.png, assets/images/tuna@2x.png 2x, assets/images/tuna@3x.png 3x" />
+              <img src="assets/images/tuna.png" width="188" height="168" alt="tuna" />
             </picture>
-            <span>日<br />本<br />食</span>
+            <div>ツ<br />ナ</div>
           </div>
-          <div class="hero__content">
-            <div class="hero__description">
-              <h2>Feel the Taste of Japanese Cuisine</h2>
-              <p>Enjoy the taste of the most popular japanese foods and drinks anytime, anywhere in colombo.</p>
-              <a class="button button--primary" href="#menu">Our Menu</a>
-            </div>
-            <div class="hero__info">
-              <div class="hero__customers__base">
-                <div>24k+</div>
-                <div>Happy<br />Customers</div>
+          <div class="about__images__shrimp">
+            <div>エ<br />ビ</div>
+            <picture>
+              <source srcset="assets/images/shrimp.png, assets/images/shrimp@2x.png 2x, assets/images/shrimp@3x.png 3x" />
+              <img src="assets/images/shrimp.png" width="188" height="126" alt="shrimp" />
+            </picture>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="menu">
+      <div class="menu__section">
+        <div class="menu__content">
+          <div class="menu__info">
+            <div>Our Menu</div>
+            <h2>Popular</h2>
+          </div>
+          <div class="menu__cards">
+            <article>
+              <picture>
+                <source srcset="assets/images/chezu.png, assets/images/chezu@2x.png 2x, assets/images/chezu@3x.png 3x" />
+                <img src="assets/images/chezu.png" width="188" height="144" alt="chezu sushi" />
+              </picture>
+              <h3>Chezu<br />Sushi</h3>
+              <div class="menu__card__content">
+                <div><span>&#127775;</span><span>4.5</span></div>
+                <div class="menu__card__price">$18.00</div>
               </div>
-              <div class="hero__customers__reviews">
-                <div>4.5<span>&#127775;</span></div>
-                <div>Customers<br />Reviews</div>
+            </article>
+            <article>
+              <picture>
+                <source srcset="assets/images/originale.png, assets/images/originale@2x.png 2x, assets/images/originale@3x.png 3x" />
+                <img src="assets/images/originale.png" width="188" height="140" alt="originale sushi" />
+              </picture>
+              <h3>Originale<br />Sushi</h3>
+              <div class="menu__card__content">
+                <div><span>&#127775;</span><span>4.8</span></div>
+                <div class="menu__card__price">$20.00</div>
               </div>
-            </div>
+            </article>
+            <article>
+              <picture>
+                <source srcset="assets/images/ramen.png, assets/images/ramen@2x.png 2x, assets/images/ramen@3x.png 3x" />
+                <img src="assets/images/ramen.png" width="188" height="117" alt="ramen legendo" />
+              </picture>
+              <h3>Ramen<br />Legendo</h3>
+              <div class="menu__card__content">
+                <div><span>&#127775;</span><span>4.5</span></div>
+                <div class="menu__card__price">$22.00</div>
+              </div>
+            </article>
           </div>
         </div>
-      </section>
-      <section>
-        <div class="about__section">
-          <div class="about__content">
-            <div>About Us / 私たちについて</div>
-            <h2>Our mission is to bring japanese flavours to you.</h2>
-            <p>We will continue to provide the experience of Omotenashi, the Japanese mindset of hospitality, with our shopping and dining for our customers.</p>
-            <a class="button button--primary" href="#contact">Our Contact</a>
+        <article class="menu__foods">
+          <div class="menu__foods__image">
+            <picture>
+              <source srcset="assets/images/sushies.png, assets/images/sushies@2x.png 2x, assets/images/sushies@3x.png 3x" />
+              <img src="assets/images/sushies.png" width="188" height="193" alt="sushies" />
+            </picture>
+            <div>食<br />べ<br />物</div>
           </div>
-          <div class="about__images">
-            <div class="about__images__tuna">
-              <picture>
-                <source srcset="assets/images/tuna.png, assets/images/tuna@2x.png 2x, assets/images/tuna@3x.png 3x" />
-                <img src="assets/images/tuna.png" width="188" height="168" alt="tuna" />
-              </picture>
-              <div>ツ<br />ナ</div>
-            </div>
-            <div class="about__images__shrimp">
-              <div>エ<br />ビ</div>
-              <picture>
-                <source srcset="assets/images/shrimp.png, assets/images/shrimp@2x.png 2x, assets/images/shrimp@3x.png 3x" />
-                <img src="assets/images/shrimp.png" width="188" height="126" alt="shrimp" />
-              </picture>
-            </div>
+          <div class="menu__foods__content">
+            <h3>Japanese Foods</h3>
+            <p>Feel the taste of the most delicious foods here.</p>
+            <ul>
+              <li><span>Originale</span><span class="line"></span><span>$20.00</span></li>
+              <li><span>Chezu</span><span class="line"></span><span>$20.00</span></li>
+              <li><span>Uramaki</span><span class="line"></span><span>$20.00</span></li>
+              <li><span>Temaki</span><span class="line"></span><span>$20.00</span></li>
+              <li><span>Sashimi</span><span class="line"></span><span>$20.00</span></li>
+              <li><span>Nigiri</span><span class="line"></span><span>$20.00</span></li>
+            </ul>
           </div>
-        </div>
-      </section>
-      <section id="menu">
-        <div class="menu__section">
-          <div class="menu__content">
-            <div class="menu__info">
-              <div>Our Menu / 私たちのメニュー</div>
-              <h2>Popular</h2>
-            </div>
-            <div class="menu__cards">
-              <article>
-                <picture>
-                  <source srcset="assets/images/chezu.png, assets/images/chezu@2x.png 2x, assets/images/chezu@3x.png 3x" />
-                  <img src="assets/images/chezu.png" width="188" height="144" alt="chezu sushi" />
-                </picture>
-                <h3>Chezu<br />Sushi</h3>
-                <div class="menu__card__content">
-                  <div><span>&#127775;</span><span>4.5</span></div>
-                  <div class="menu__card__price">$18.00</div>
-                </div>
-              </article>
-              <article>
-                <picture>
-                  <source srcset="assets/images/originale.png, assets/images/originale@2x.png 2x, assets/images/originale@3x.png 3x" />
-                  <img src="assets/images/originale.png" width="188" height="140" alt="originale sushi" />
-                </picture>
-                <h3>Originale<br />Sushi</h3>
-                <div class="menu__card__content">
-                  <div><span>&#127775;</span><span>4.8</span></div>
-                  <div class="menu__card__price">$20.00</div>
-                </div>
-              </article>
-              <article>
-                <picture>
-                  <source srcset="assets/images/ramen.png, assets/images/ramen@2x.png 2x, assets/images/ramen@3x.png 3x" />
-                  <img src="assets/images/ramen.png" width="188" height="117" alt="ramen legendo" />
-                </picture>
-                <h3>Ramen<br />Legendo</h3>
-                <div class="menu__card__content">
-                  <div><span>&#127775;</span><span>4.5</span></div>
-                  <div class="menu__card__price">$22.00</div>
-                </div>
-              </article>
-            </div>
+        </article>
+        <article class="menu__drinks">
+          <div class="menu__drinks__image">
+            <div>飲<br />み<br />物</div>
+            <picture>
+              <source srcset="assets/images/drinks.png, assets/images/drinks@2x.png 2x" />
+              <img src="assets/images/drinks.png" width="188" height="252" alt="drinks" />
+            </picture>
           </div>
-          <article class="menu__foods">
-            <div class="menu__foods__image">
-              <picture>
-                <source srcset="assets/images/sushies.png, assets/images/sushies@2x.png 2x, assets/images/sushies@3x.png 3x" />
-                <img src="assets/images/sushies.png" width="188" height="193" alt="sushies" />
-              </picture>
-              <div>食<br />べ<br />物</div>
-            </div>
-            <div class="menu__foods__content">
-              <h3>Japanese Foods</h3>
-              <p>Feel the taste of the most delicious foods here.</p>
-              <ul>
-                <li><span>Originale</span><span class="line"></span><span>$20.00</span></li>
-                <li><span>Chezu</span><span class="line"></span><span>$20.00</span></li>
-                <li><span>Uramaki</span><span class="line"></span><span>$20.00</span></li>
-                <li><span>Temaki</span><span class="line"></span><span>$20.00</span></li>
-                <li><span>Sashimi</span><span class="line"></span><span>$20.00</span></li>
-                <li><span>Nigiri</span><span class="line"></span><span>$20.00</span></li>
-              </ul>
-            </div>
-          </article>
-          <article class="menu__drinks">
-            <div class="menu__drinks__image">
-              <div>飲<br />み<br />物</div>
-              <picture>
-                <source srcset="assets/images/drinks.png, assets/images/drinks@2x.png 2x" />
-                <img src="assets/images/drinks.png" width="188" height="252" alt="drinks" />
-              </picture>
-            </div>
-            <div class="menu__drinks__content">
-              <h3>Japanese Drinks</h3>
-              <p>Feel the taste of the most delicious Drinks here.</p>
-              <ul>
-                <li><span>Oruncha</span><span class="line"></span><span>$20.00</span></li>
-                <li><span>Aojiru</span><span class="line"></span><span>$20.00</span></li>
-                <li><span>Kombu-Cha</span><span class="line"></span><span>$20.00</span></li>
-                <li><span>Sakura Tea</span><span class="line"></span><span>$20.00</span></li>
-                <li><span>Ofukucha</span><span class="line"></span><span>$20.00</span></li>
-                <li><span>Mugicha</span><span class="line"></span><span>$20.00</span></li>
-              </ul>
-            </div>
-          </article>
-        </div>
-      </section>
-      <section id="contact">
-        <div class="contact__section">
-          <div class="contact__content">
-            <div>Contact Us / お問い合わせ</div>
-            <h2>We deliver to your doorstep all over Colombo!</h2>
-            <div class="contact__info">
-              <article>
-                <h3>Phone Number</h3>
-                <p>+81 22 333 4444</p>
-              </article>
-              <article>
-                <h3>Open Hours</h3>
-                <p>10 A.M - 10 P.M</p>
-              </article>
-              <article>
-                <h3>Location</h3>
-                <p>Colombo</p>
-              </article>
-            </div>
+          <div class="menu__drinks__content">
+            <h3>Japanese Drinks</h3>
+            <p>Feel the taste of the most delicious Drinks here.</p>
+            <ul>
+              <li><span>Oruncha</span><span class="line"></span><span>$20.00</span></li>
+              <li><span>Aojiru</span><span class="line"></span><span>$20.00</span></li>
+              <li><span>Kombu-Cha</span><span class="line"></span><span>$20.00</span></li>
+              <li><span>Sakura Tea</span><span class="line"></span><span>$20.00</span></li>
+              <li><span>Ofukucha</span><span class="line"></span><span>$20.00</span></li>
+              <li><span>Mugicha</span><span class="line"></span><span>$20.00</span></li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section id="visit">
+      <div class="visit__section">
+        <div class="visit__content">
+          <div class="visit__info">
+            <div>Visit Us</div>
+            <h2>Join us for a true japanese experience</h2>
+            <p>Experience the true essence of Japan with every bite. Enjoy authentic flavors, a peaceful atmosphere, and warm hospitality — all in one unforgettable dine-in experience. Reserve your table today.</p>
+          </div>
+          <div class="visit__cards">
+            <article>
+              <h3>Open Hours</h3>
+              <p>10 A.M - 10 P.M</p>
+            </article>
+            <article>
+              <h3>Location</h3>
+              <p>Colombo</p>
+            </article>
+            <article>
+              <h3>Reserve Table</h3>
+              <p><a href="tel:+94711450713">+94 71 145 0713</a></p>
+            </article>
           </div>
         </div>
-      </section>
-    </main>
-    <footer>
-      <div>SushiWave</div>
-    </footer>
-  </body>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div>SushiWave</div>
+  </footer>
+</body>
+
 </html>

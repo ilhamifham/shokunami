@@ -58,12 +58,14 @@ header h1,
 .hero__description h2,
 .hero__customers__base div:first-child,
 .hero__customers__reviews div:first-child,
+.about__content div,
 .about__content h2,
 .menu__cards article h3,
-.menu__card__price,
+.menu__card__content,
 .menu__foods__image div,
 .menu__drinks__image div,
-.contact__info article h3,
+.visit__info div,
+.visit__info h2,
 footer div {
   color: var(--heading-fg);
 }
@@ -83,7 +85,7 @@ header,
 .hero__section,
 .about__section,
 .menu__section,
-.contact__section,
+.visit__section,
 footer {
   max-width: 75rem;
   margin: 0 auto;
@@ -109,19 +111,16 @@ footer {
 .menu__info,
 .menu__foods__content,
 .menu__drinks__content,
-.contact__content div:first-child,
-.contact__content h2 {
+.visit__cards {
   color: var(--white);
 }
 
 .button,
 .about__description div,
-.menu__info div,
 .menu__card__content,
 .menu__foods__content ul li,
 .menu__drinks__content ul li,
-.contact__content div:first-child,
-.contact__info p {
+.visit__cards article p {
   font-family: var(--font-plusJakartaSans-semibold);
 }
 
@@ -192,7 +191,7 @@ footer div {
 
 .hero__customers__base div:first-child,
 .hero__customers__reviews div:first-child {
-  font-size: 4rem;
+  font-size: 3.5rem;
   text-transform: uppercase;
 }
 
@@ -216,7 +215,6 @@ footer div {
 
 .about__content div {
   font-size: 1.125rem;
-  color: var(--heading-fg);
 }
 
 .about__content h2 {
@@ -309,10 +307,6 @@ footer div {
   display: inline-block;
 }
 
-.menu__drinks {
-  border-bottom: var(--radius-sm) solid var(--body-bg);
-}
-
 .menu__foods__image,
 .menu__drinks__image {
   display: flex;
@@ -376,42 +370,50 @@ footer div {
   background-color: var(--white);
 }
 
-/* === Contact === */
+/* === Visit === */
 
-.contact__section {
+.visit__info,
+.visit__cards {
   padding: 2rem 1rem;
-  background-color: var(--brightMaroon);
-  text-align: center;
 }
 
-.contact__content div {
+.visit__info div {
   font-size: 1.125rem;
 }
 
-.contact__content h2 {
-  margin: 1rem 0;
+.visit__info h2 {
   font-size: 2.5rem;
+  margin: 1rem 0;
 }
 
-.contact__info {
-  margin-top: 2.5rem;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
+.visit__info p {
+  max-width: 48rem;
+  margin: 0 auto;
 }
 
-.contact__info article {
+.visit__cards {
+  background-color: var(--brightMaroon);
+}
+
+.visit__cards article {
   background-color: var(--body-bg);
-  color: var(--body-fg);
-  border-radius: var(--radius-lg);
+  color: var(--heading-fg);
+  text-align: center;
   padding: 1rem;
-  width: 100%;
+  border-radius: var(--radius-lg);
 }
 
-.contact__inifo article h3 {
+.visit__cards article:nth-child(2) {
+  margin: 2rem 0;
+}
+
+.visit__cards article h3 {
   font-size: 1.5rem;
-  text-transform: uppercase;
   margin-bottom: 1rem;
+}
+
+.visit__cards article p {
+  font-size: 1.125rem;
 }
 
 /* === Footer === */
@@ -476,11 +478,9 @@ footer {
     flex: 1;
   }
 
-  /* === Contact === */
+  /* === Visit === */
 
-  .contact__info {
-    flex-direction: row;
-  }
+
 }
 
 @media screen and (min-width: 48rem) {
@@ -504,6 +504,36 @@ footer {
 
   .menu__foods__content {
     order: -1;
+  }
+
+  .menu__drinks {
+    border-bottom: var(--radius-sm) solid var(--body-bg);
+  }
+
+  .visit__info {
+    background-color: var(--brightMaroon);
+    color: var(--white);
+    padding-bottom: 1rem;
+    text-align: center;
+  }
+
+  .visit__info div,
+  .visit__info h2 {
+    color: var(--white);
+  }
+
+  .visit__cards {
+    display: flex;
+    align-items: center;
+  }
+
+  .visit__cards article {
+    flex: 1;
+    white-space: nowrap;
+  }
+
+  .visit__cards article:nth-child(2) {
+    margin: 0 2rem;
   }
 }
 
@@ -556,7 +586,7 @@ footer {
   }
 
   .hero__description {
-    padding: 3rem 2rem;
+    padding: 0 2rem 3rem;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -564,7 +594,9 @@ footer {
     align-items: flex-start;
   }
 
-  .hero__description h2 {
+  .hero__description h2,
+  .hero__customers__base div:first-child,
+  .hero__customers__reviews div:first-child {
     font-size: 4rem;
   }
 
@@ -655,14 +687,23 @@ footer {
     border-top-right-radius: var(--radius-lg);
   }
 
-  /* === Contact === */
+  /* === Visit === */
 
-  .contact__section {
+  .visit__info {
+    padding: 2rem 2rem 1rem;
     border-top-left-radius: var(--radius-lg);
+  }
+
+  .visit__cards {
+    padding: 2rem;
     border-bottom-left-radius: var(--radius-lg);
     border-bottom-right-radius: var(--radius-lg);
-    padding: 2rem;
   }
+
+  .visit__info h2 {
+    font-size: 3rem;
+  }
+
 
   /* === Footer === */
 

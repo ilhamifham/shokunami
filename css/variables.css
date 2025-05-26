@@ -1,6 +1,6 @@
 :root {
   --body-bg: #ffffff;
-  --body-fg: #000000cc;
+  --body-fg: #000000aa;
   --heading-fg: #000000;
   --border-bg: #0000001a;
   --white: #ffffff;
@@ -17,7 +17,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --body-bg: #121212;
-    --body-fg: #ffffffcc;
+    --body-fg: #ffffff99;
     --heading-fg: #ffffff;
     --border-bg: #ffffff1a;
     --brightMaroon: #6d1226;
