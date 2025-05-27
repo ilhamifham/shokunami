@@ -64,7 +64,7 @@ header h1,
 .menu__card__content,
 .menu__foods__image div,
 .menu__drinks__image div,
-.visit__info div,
+.visit__info .heading,
 .visit__info h2,
 footer div {
   color: var(--heading-fg);
@@ -110,8 +110,7 @@ footer {
 .about__images__shrimp,
 .menu__info,
 .menu__foods__content,
-.menu__drinks__content,
-.visit__cards {
+.menu__drinks__content {
   color: var(--white);
 }
 
@@ -119,14 +118,21 @@ footer {
 .about__description div,
 .menu__card__content,
 .menu__foods__content ul li,
-.menu__drinks__content ul li,
-.visit__cards article p {
+.menu__drinks__content ul li {
   font-family: var(--font-plusJakartaSans-semibold);
 }
 
 header h1,
 footer div {
   font-size: 2rem;
+}
+
+.hero__image span,
+.about__images__tuna div:last-child,
+.about__images__shrimp div:first-child,
+.menu__foods__image div,
+.menu__drinks__image div {
+  font-weight: 900;
 }
 
 /* === Hero === */
@@ -372,12 +378,11 @@ footer div {
 
 /* === Visit === */
 
-.visit__info,
-.visit__cards {
+.visit__info {
   padding: 2rem 1rem;
 }
 
-.visit__info div {
+.visit__info .heading {
   font-size: 1.125rem;
 }
 
@@ -386,34 +391,18 @@ footer div {
   margin: 1rem 0;
 }
 
-.visit__info p {
+.visit__info .tagline {
   max-width: 48rem;
   margin: 0 auto;
 }
 
-.visit__cards {
-  background-color: var(--brightMaroon);
+.visit__info label {
+  cursor: pointer;
 }
 
-.visit__cards article {
-  background-color: var(--body-bg);
-  color: var(--heading-fg);
-  text-align: center;
-  padding: 1rem;
-  border-radius: var(--radius-lg);
-}
-
-.visit__cards article:nth-child(2) {
-  margin: 2rem 0;
-}
-
-.visit__cards article h3 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
-
-.visit__cards article p {
-  font-size: 1.125rem;
+.visit__info .button {
+  display: inline-block;
+  margin-top: 2rem;
 }
 
 /* === Footer === */
@@ -476,10 +465,6 @@ footer {
     padding: 2rem;
     flex: 1;
   }
-
-  /* === Visit === */
-
-
 }
 
 @media screen and (min-width: 48rem) {
@@ -516,23 +501,9 @@ footer {
     text-align: center;
   }
 
-  .visit__info div,
+  .visit__info .heading,
   .visit__info h2 {
     color: var(--white);
-  }
-
-  .visit__cards {
-    display: flex;
-    align-items: center;
-  }
-
-  .visit__cards article {
-    flex: 1;
-    white-space: nowrap;
-  }
-
-  .visit__cards article:nth-child(2) {
-    margin: 0 2rem;
   }
 }
 
@@ -694,12 +665,6 @@ footer {
     border-top-left-radius: var(--radius-lg);
   }
 
-  .visit__cards {
-    padding: 2rem;
-    border-bottom-left-radius: var(--radius-lg);
-    border-bottom-right-radius: var(--radius-lg);
-  }
-
   .visit__info h2 {
     font-size: 3rem;
   }
@@ -710,4 +675,52 @@ footer {
   footer div {
     text-align: right;
   }
+}
+
+
+/* examples */
+#location {
+  position: absolute;
+  width: 0;
+  height: 0;
+  clip: rect(0,0,0,0);
+}
+
+#location:focus-visible + label,
+#location:focus-visible ~ #model label {
+  outline: 2px solid dodgerblue;
+  outline-offset: 2px;
+}
+
+#location:checked ~ #model {
+  visibility: visible;
+}
+
+#model {
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #00000030;
+  backdrop-filter: blur(5px);
+  padding: 1rem;
+}
+
+#model div {
+  background-color: var(--body-bg);
+  border-radius: var(--radius-lg);
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#model label {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
 }
