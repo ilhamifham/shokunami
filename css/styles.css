@@ -430,7 +430,6 @@ footer {
 
   .hero__image span {
     font-size: 15vw;
-    margin-right: 4vw;
   }
 }
 
@@ -575,7 +574,8 @@ footer {
 
   .hero__image span {
     font-size: 5.5rem;
-    margin-right: 2rem;
+    margin-top: 1.5rem;
+    margin-right: 1.5rem;
   }
 
   .hero__content {
