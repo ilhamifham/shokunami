@@ -503,7 +503,7 @@ header ul li:nth-child(2) {
 }
 
 .visit__cards .card:nth-child(2) {
-  margin: 1rem 0;
+  margin: 2rem 0;
 }
 
 .visit__cards .icon {
@@ -668,7 +668,7 @@ footer .icon:first-child {
   }
 
   .visit__cards .card:nth-child(2) {
-    margin: 0 1rem;
+    margin: 0 2rem;
   }
 }
 
