@@ -237,7 +237,7 @@ header ul li:nth-child(2) {
 }
 
 .hero__description {
-  padding: 2rem 1rem;
+  padding: 1.4rem 1rem 2rem;
 }
 
 .hero__description h2 {
@@ -251,14 +251,14 @@ header ul li:nth-child(2) {
 }
 
 .hero__info {
-  padding: 2rem 1rem;
+  padding: 2rem 1rem 1.7rem;
   display: flex;
   flex-direction: column;
 }
 
 .hero__customers__base {
   border-bottom: 1px solid var(--border-bg);
-  padding-bottom: 1.5rem;
+  padding-bottom: 1.2rem;
 }
 
 .hero__customers__reviews {
@@ -279,6 +279,7 @@ header ul li:nth-child(2) {
 .hero__customers__reviews div:first-child {
   font-size: 3.5rem;
   text-transform: uppercase;
+  line-height: 1;
 }
 
 .hero__customers__reviews div:first-child span {
@@ -296,7 +297,7 @@ header ul li:nth-child(2) {
 
 .about__content {
   order: 1;
-  padding: 2rem 1rem;
+  padding: 1.7rem 1rem 2rem;
 }
 
 .about__content div {
@@ -335,7 +336,7 @@ header ul li:nth-child(2) {
 /* === Menu === */
 
 .menu__content {
-  padding: 2rem 1rem;
+  padding: 1.7rem 1rem 2rem;
   background-color: var(--brightMaroon);
 }
 
@@ -370,6 +371,7 @@ header ul li:nth-child(2) {
 .menu__cards article picture {
   display: flex;
   align-items: center;
+  justify-content: center;
   height: 9rem;
 }
 
@@ -409,7 +411,7 @@ header ul li:nth-child(2) {
 
 .menu__foods__content,
 .menu__drinks__content {
-  padding: 2rem 1rem;
+  padding: 1.7rem 1rem 2rem;
   background-color: var(--brightMaroon);
   display: flex;
   flex-direction: column;
@@ -458,7 +460,7 @@ header ul li:nth-child(2) {
 /* === Visit === */
 
 .visit__info {
-  padding: 2rem 1rem;
+  padding: 1.7rem 1rem 2rem;
 }
 
 .visit__info .heading {
@@ -581,7 +583,7 @@ footer .icon:first-child {
   .hero__info {
     flex-direction: row;
     justify-content: center;
-    padding: 2rem 0;
+    padding: 2rem 0 1.7rem;
     margin: 0 1rem;
     border-top: 1px solid var(--border-bg);
   }
@@ -621,6 +623,41 @@ footer .icon:first-child {
 }
 
 @media screen and (min-width: 48rem) {
+  /* === Hero === */
+
+  header {
+    align-items: center;
+  }
+
+  header #dropdown,
+  header .icon {
+    display: none;
+  }
+
+  header nav {
+    width: inherit;
+    visibility: inherit;
+    height: inherit;
+    transition: inherit;
+  }
+
+  header ul {
+    padding: 0;
+    opacity: inherit;
+    transform: inherit;
+    display: flex;
+    transition: inherit;
+  }
+
+  header ul li:nth-child(2) {
+    margin: 0 2rem;
+  }
+
+  #dropdown:checked~nav {
+    visibility: inherit;
+    height: inherit;
+  }
+
   /* === Menu === */
 
   .menu__foods {
@@ -649,7 +686,6 @@ footer .icon:first-child {
 
   .visit__info {
     background-color: var(--brightMaroon);
-    padding-bottom: 1rem;
     text-align: center;
   }
 
@@ -684,12 +720,6 @@ footer .icon:first-child {
 
   header h1 {
     text-align: left;
-  }
-
-  header #dropdown,
-  header .icon,
-  header nav {
-    display: none;
   }
 
   /* === Hero === */
@@ -728,7 +758,7 @@ footer .icon:first-child {
   }
 
   .hero__description {
-    padding: 0 2rem 3rem;
+    padding: 1.5rem 2rem 2rem;
     height: 100%;
     display: flex;
     flex-direction: column;
