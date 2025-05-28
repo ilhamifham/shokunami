@@ -5,6 +5,7 @@
   --border-bg: #0000001a;
   --white: #ffffff;
   --brightMaroon: #c32246;
+  --model-bg: #00000080;
 
   --radius-lg: 10px;
   --radius-sm: 5px;
@@ -21,5 +22,6 @@
     --heading-fg: #ffffff;
     --border-bg: #ffffff1a;
     --brightMaroon: #6d1226;
+    --model-bg: #ffffff20;
   }
 }
