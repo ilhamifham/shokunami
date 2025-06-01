@@ -159,7 +159,7 @@ footer div:first-child {
 
 #nav:focus-visible+label,
 #popup:focus-visible+label,
-#popup:focus-visible~#model label {
+#popup:focus-visible~.popup__model label {
   outline: 2px solid dodgerblue;
   outline-offset: 2px;
 }
