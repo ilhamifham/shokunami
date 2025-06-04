@@ -230,6 +230,10 @@ header ul li:nth-child(2) {
   max-width: 37.5rem;
 }
 
+.hero__image picture:last-of-type {
+  display: none;
+}
+
 .hero__image span {
   position: absolute;
   font-size: 3rem;
@@ -725,6 +729,14 @@ footer .icon:first-child {
 
   .hero__image picture {
     margin-top: auto;
+  }
+
+  .hero__image picture:first-of-type {
+    display: none;
+  }
+
+  .hero__image picture:last-of-type {
+    display: block;
   }
 
   .hero__image span {
