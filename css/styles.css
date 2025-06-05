@@ -557,7 +557,7 @@ footer div:last-child {
 }
 
 footer .icon:first-child {
-  margin-right: 0.5rem;
+  margin-right: 1rem;
 }
 
 /* === Media Queries === */
@@ -657,7 +657,7 @@ footer .icon:first-child {
 
   header ul li:nth-child(2) a {
     border: none;
-    margin: 0 2rem;
+    margin: 0 1rem;
   }
 
   #nav-input:checked~nav {
