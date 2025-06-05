@@ -152,7 +152,11 @@ footer div:first-child {
 /* === Header === */
 
 header {
-  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: var(--body-bg);
+  border-bottom: 1px solid var(--border-bg);
 }
 
 header h1 {
@@ -162,28 +166,38 @@ header h1 {
 header .icon svg {
   cursor: pointer;
   transform: rotate(45deg);
-  transition: transform 350ms ease-in-out;
+  transition: transform 250ms ease-in-out;
 }
 
 header nav {
-  width: 100%;
+  position: absolute;
+  top: 4rem;
+  right: 1rem;
+  background-color: var(--body-bg);
+  border: 1px solid var(--border-bg);
+  width: 12.5rem;
+  border-radius: var(--radius-lg);
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 10px 35px 0px;
   visibility: hidden;
-  height: 0;
-  transition: visibility 350ms ease-in-out, height 350ms ease-in-out;
+  transform: scale(0);
+  transform-origin: top right;
+  transition: visibility 250ms ease-in-out, transform 250ms ease-in-out;
 }
 
 header ul {
   list-style: none;
-  padding-top: 1rem;
   font-size: 1.125rem;
   color: var(--heading-fg);
-  transform: translateY(-15px);
-  opacity: 0;
-  transition: transform 350ms ease-in-out, opacity 350ms ease-in-out;
 }
 
-header ul li:nth-child(2) {
-  margin: 1rem 0;
+header ul a {
+  display: block;
+  padding: 0.5rem 1rem;
+}
+
+header ul li:nth-child(2) a {
+  border-top: 1px solid var(--border-bg);
+  border-bottom: 1px solid var(--border-bg);
 }
 
 #nav-input {
@@ -209,14 +223,8 @@ header ul li:nth-child(2) {
 
 #nav-input:checked~nav {
   visibility: visible;
-  height: 8.3125rem;
+  transform: scale(1);
 }
-
-#nav-input:checked~nav ul {
-  transform: translateY(0);
-  opacity: 100%;
-}
-
 
 /* === Hero === */
 
@@ -612,6 +620,8 @@ footer .icon:first-child {
 
   header {
     align-items: center;
+    border-bottom: none;
+    position: static;
   }
 
   #nav-input,
@@ -620,27 +630,38 @@ footer .icon:first-child {
   }
 
   header nav {
-    width: inherit;
-    visibility: inherit;
-    height: inherit;
-    transition: inherit;
+    position: static;
+    border: none;
+    width: auto;
+    border-radius: 0;
+    box-shadow: none;
+    visibility: visible;
+    transform: none;
+    transition: none;
   }
 
   header ul {
-    padding: 0;
-    opacity: inherit;
-    transform: inherit;
     display: flex;
-    transition: inherit;
   }
 
-  header ul li:nth-child(2) {
+  header ul a {
+    padding: 0.594rem 1rem;
+    background-color: var(--heading-fg);
+    color: var(--body-bg);
+    width: 5rem;
+    text-align: center;
+    border-radius: 100px;
+    font-size: 0.875rem;
+    font-family: var(--font-plusJakartaSans-semibold);
+  }
+
+  header ul li:nth-child(2) a {
+    border: none;
     margin: 0 2rem;
   }
 
   #nav-input:checked~nav {
-    visibility: inherit;
-    height: inherit;
+    visibility: visible;
   }
 
   /* === Menu === */
@@ -722,7 +743,6 @@ footer .icon:first-child {
     padding-top: 2rem;
     padding-bottom: 1rem;
     border-top-left-radius: var(--radius-lg);
-    border-top-right-radius: var(--radius-lg);
     border-bottom-left-radius: var(--radius-lg);
     display: flex;
   }
@@ -741,8 +761,12 @@ footer .icon:first-child {
 
   .hero__image span {
     font-size: 5.5rem;
-    margin-top: 1.5rem;
-    margin-right: 1.5rem;
+    margin-top: 2rem;
+    margin-right: 2rem;
+    background-color: var(--body-bg);
+    color: var(--heading-fg);
+    padding: 0 0.5rem 0.7rem;
+    border-radius: var(--radius-lg);
   }
 
   .hero__content {
@@ -750,6 +774,8 @@ footer .icon:first-child {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background-color: var(--brightMaroon);
+    border-top-right-radius: var(--radius-lg);
   }
 
   .hero__description {
@@ -762,13 +788,30 @@ footer .icon:first-child {
   }
 
   .hero__description h2,
+  .hero__description p {
+    color: var(--white);
+  }
+
+  .hero__description h2,
   .hero__customers__base div:first-child,
   .hero__customers__reviews div:first-child {
     font-size: 4rem;
   }
 
   .hero__info {
-    margin: 0 2rem;
+    margin: 0 2rem 2rem;
+    border-top: none;
+    background-color: var(--body-bg);
+    border-radius: var(--radius-lg);
+    padding: 1rem;
+  }
+
+  .hero__customers__base {
+    padding-right: 1rem;
+  }
+
+  .hero__customers__reviews {
+    padding-left: 1rem;
   }
 
   /* === About === */
@@ -819,7 +862,7 @@ footer .icon:first-child {
 
   .about__images__tuna {
     border-right: inherit;
-    border-top-right-radius: var(--radius-lg);
+    border-top: var(--radius-sm) solid var(--body-bg);
   }
 
   /* === Menu === */
